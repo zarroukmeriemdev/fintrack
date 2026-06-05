@@ -1,5 +1,7 @@
 # FinTrack — Personal Finance Dashboard
 
+[![CI](https://github.com/zarroukmeriemdev/fintrack/actions/workflows/ci.yml/badge.svg)](https://github.com/zarroukmeriemdev/fintrack/actions/workflows/ci.yml)
+
 A production-ready personal finance dashboard built with React. Track income and
 expenses, set category budgets, monitor savings goals, and visualise spending
 trends — all in a fast, accessible, responsive single-page app.
