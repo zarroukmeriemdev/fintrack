@@ -129,7 +129,9 @@ The app is a static SPA and ships with config for both major free hosts:
 Both configs route all paths to `index.html` so client-side deep links (e.g.
 `/dashboard`, `/settings/accounts`) work on refresh.
 
-**Live URL:** _add your deployed URL here after deploying_
+**Live URL:** https://fintrack-capstone-app.netlify.app
+
+(Use the demo account above, or register a new one.)
 
 ---
 
