@@ -1,0 +1,42 @@
+{
+  "name": "fintrack",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "FinTrack — a production-ready personal finance dashboard built with React.",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --write \"src/**/*.{js,jsx,css}\"",
+    "format:check": "prettier --check \"src/**/*.{js,jsx,css}\""
+  },
+  "dependencies": {
+    "date-fns": "^3.6.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
+    "recharts": "^2.12.7"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@vitejs/plugin-react": "^4.3.1",
+    "@vitest/coverage-v8": "^2.1.1",
+    "eslint": "^8.57.1",
+    "eslint-plugin-jsx-a11y": "^6.10.0",
+    "eslint-plugin-react": "^7.36.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.12",
+    "jsdom": "^25.0.1",
+    "prettier": "^3.3.3",
+    "vite": "^5.4.8",
+    "vitest": "^2.1.1"
+  }
+}
