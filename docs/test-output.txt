@@ -1,0 +1,45 @@
+FinTrack — Test Output
+Command: npm run test:coverage
+========================================
+
+ ✓ src/__tests__/unit/utils/validators.test.js (28 tests) 7ms
+ ✓ src/__tests__/unit/hooks/useFormValidation.test.js (6 tests) 19ms
+ ✓ src/__tests__/unit/utils/helpers.test.js (18 tests) 15ms
+ ✓ src/__tests__/unit/reducers/appReducer.test.js (9 tests) 4ms
+ ✓ src/__tests__/unit/api/endpoints.test.js (7 tests) 19ms
+ ✓ src/__tests__/unit/components/widgets.test.jsx (9 tests) 254ms
+ ✓ src/__tests__/unit/reducers/authReducer.test.js (7 tests) 3ms
+ ✓ src/__tests__/unit/api/client.test.js (6 tests) 8ms
+ ✓ src/__tests__/unit/utils/formatters.test.js (15 tests) 21ms
+ ✓ src/__tests__/unit/hooks/useFetch.test.js (4 tests) 150ms
+ ✓ src/__tests__/integration/settingsAndSignup.test.jsx (5 tests) 1372ms
+   ✓ signup flow > creates an account and lands on the dashboard 809ms
+ ✓ src/__tests__/unit/components/Button.test.jsx (6 tests) 97ms
+ ✓ src/__tests__/unit/hooks/useDebounce.test.js (3 tests) 18ms
+ ✓ src/__tests__/unit/components/Modal.test.jsx (4 tests) 105ms
+ ✓ src/__tests__/integration/budgetsAndReports.test.jsx (2 tests) 500ms
+ ✓ src/__tests__/integration/transactions.test.jsx (2 tests) 933ms
+   ✓ transactions workflow > lists seeded transactions and supports adding a new one 563ms
+   ✓ transactions workflow > filters transactions by search term 369ms
+ ✓ src/__tests__/integration/auth.test.jsx (3 tests) 615ms
+   ✓ authentication flow > logs in with the demo account and lands on the dashboard 429ms
+ ✓ src/__tests__/unit/components/Input.test.jsx (4 tests) 72ms
+ ✓ src/__tests__/unit/hooks/useLocalStorage.test.js (4 tests) 15ms
+ ✓ src/__tests__/unit/utils/localStorage.test.js (5 tests) 4ms
+ ✓ src/__tests__/integration/routing.test.jsx (3 tests) 117ms
+ Test Files  21 passed (21)
+      Tests  150 passed (150)
+   Duration  3.72s (transform 549ms, setup 2.74s, collect 1.91s, tests 4.35s, environment 7.96s, prepare 1.66s)
+File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+ src               |     100 |      100 |     100 |     100 |                   
+ src/api           |   93.87 |    93.87 |     100 |   93.87 |                   
+ src/contexts      |   92.66 |     92.5 |     100 |   92.66 |                   
+ src/hooks         |    95.4 |    78.57 |     100 |    95.4 |                   
+ src/pages         |   91.26 |    65.82 |   46.42 |   91.26 |                   
+ src/reducers      |     100 |     87.8 |     100 |     100 |                   
+ src/test          |     100 |       75 |     100 |     100 |                   
+ src/utils         |   97.93 |    91.66 |     100 |   97.93 |                   
+Statements   : 95.08% ( 2708/2848 )
+Branches     : 83.07% ( 481/579 )
+Functions    : 81.7% ( 134/164 )
+Lines        : 95.08% ( 2708/2848 )

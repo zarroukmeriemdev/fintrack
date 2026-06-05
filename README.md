@@ -164,9 +164,86 @@ details and [`TEST_REPORT.md`](./TEST_REPORT.md) for the testing summary.
 
 ## Screenshots
 
-> _Add screenshots here (homepage, dashboard, transactions, budgets, reports,
-> mobile view, dark mode, Lighthouse report, test output)._
+### Dashboard — light & dark
+
+| Light | Dark |
+| ----- | ---- |
+| ![Dashboard in light mode](docs/screenshots/dashboard-light.png) | ![Dashboard in dark mode](docs/screenshots/dashboard-dark.png) |
+
+KPI cards (net balance, income, expenses), a monthly income-vs-expense chart, a
+spending-by-category donut, recent activity, and savings goals.
+
+### Transactions
+
+![Transactions page with search, filters and table](docs/screenshots/transactions.png)
+
+Full transaction list with search, type/category/month filters, signed amounts,
+CSV export, and per-row edit/delete.
+
+### Budgets
+
+![Budgets page with per-category progress](docs/screenshots/budgets.png)
+
+Per-category monthly limits with live spend-vs-limit progress bars and
+over-budget warnings.
+
+### Reports
+
+![Reports page with charts and category breakdown](docs/screenshots/reports.png)
+
+Income vs. expense, category breakdown, savings-rate KPI, and a per-category
+spending table — filterable by period.
+
+## Performance — Lighthouse
+
+Audited against the live deployment with Lighthouse 12 (desktop):
+
+![Lighthouse report — Performance 99, Accessibility 98, Best Practices 100, SEO 91](docs/lighthouse/lighthouse-report.png)
+
+| Category       | Score |
+| -------------- | ----- |
+| Performance    | 99    |
+| Accessibility  | 98    |
+| Best Practices | 100   |
+| SEO            | 91    |
+
+Key metrics: First Contentful Paint **1.3 s**, Largest Contentful Paint
+**1.3 s**, Total Blocking Time **0 ms**, Cumulative Layout Shift **0**. The full
+report is in [`docs/lighthouse/`](docs/lighthouse/) (`report.report.html` —
+open it in a browser — and `report.report.json`).
+
+**Re-run it yourself:**
+
+```bash
+npm run build && npm run preview        # serve the production build
+# in another terminal:
+npx lighthouse http://localhost:4173 --view
+# or audit the live site directly:
+npx lighthouse https://fintrack-capstone-app.netlify.app --view
+```
+
+## Test output
+
+All 150 tests pass with ~95% statement coverage. A captured run is in
+[`docs/test-output.txt`](docs/test-output.txt); see
+[`TEST_REPORT.md`](./TEST_REPORT.md) for the full breakdown.
+
+```
+ Test Files  21 passed (21)
+      Tests  150 passed (150)
+
+ % Coverage report
+ Statements   : 95.08%
+ Branches     : 83.07%
+ Functions    : 81.70%
+ Lines        : 95.08%
+```
+
+Generate it locally with `npm run test:coverage` (HTML report at
+`coverage/index.html`).
 
 ## License
+
+Built for educational purposes as a course capstone.
 
 Built for educational purposes as a course capstone.
